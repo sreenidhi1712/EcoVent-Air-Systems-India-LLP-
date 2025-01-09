@@ -1,0 +1,14 @@
+.autoShowFromRight {
+    animation: autoShowAnimation 1.6s ease-in-out both; /* Adjust the duration and timing function as needed */
+  }
+  
+  @keyframes autoShowAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%) scale(0.3);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+  }

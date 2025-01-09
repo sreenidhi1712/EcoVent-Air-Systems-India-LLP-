@@ -20,7 +20,7 @@ function Navbar() {
 
         <div className="h-[100%]  justify-evenly items-center w-[40%]  lap:flex hidden">
 
-         <p className="text-xl  font-bold hover:border-b-2 border-black py-2 cursor-pointer" onClick={()=>navigate("/")}>
+         <p className="text-xl  font-bold hover:border-b-2  border-black py-2 cursor-pointer " onClick={()=>navigate("/")}>
             Home
          </p>
          <p className="text-xl  font-bold hover:border-b-2 border-black py-2 cursor-pointer" onClick={()=>navigate("/product/rectangularDuct")}>

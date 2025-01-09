@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function Product({image,data}) {
   const navigate = useNavigate();
   return (
-    <div className="w-[90%] h-60 py-5  bg-white shadow-2xl rounded-2xl  ml:w-[100%] tab:h-80 lap:w-[90%] flex flex-col items-center justify-between hover:scale-105 transition-transform duration-500">
+    <div className="w-[90%] h-60 py-7  bg-white  hover:shadow-2xl shadow-lg rounded-2xl  ml:w-[100%] tab:h-80 lap:w-[90%] flex flex-col items-center justify-between hover:scale-105 transition-all duration-500">
       <div className="w-[90%] h-[70%] flex justify-center items-center">
       <img src={image} className="h-full w-full object-contain "/>
       </div>
