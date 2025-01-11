@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function ServiceCard() {
   const settings = {
-    dots: true,
     infinite: true,
     autoplay: true,
     speed: 3000,

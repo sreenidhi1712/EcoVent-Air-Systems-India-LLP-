@@ -8,7 +8,7 @@ import SliderComponent from "../../Components/Slider";
 import ovalDuct from "../../assets/ovalDuct.png";
 import rectangular from "../../assets/Duct.jpg";  
 import spiralDuct from "../../assets/spiralDucts.jpg"
-import volumeDampers from "../../assets/VolumeDampers.png"
+import volumeDampers from "../../assets/VolumeDampers.jpg"
 
 
 
