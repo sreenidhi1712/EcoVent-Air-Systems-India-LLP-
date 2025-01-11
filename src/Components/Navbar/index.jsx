@@ -10,7 +10,7 @@ function Navbar() {
    const navigate = useNavigate();
    const [showMenu, setShowMenu] = useState(false)
   return (
-    <div className="h-20  z-10 flex justify-between lap:justify-evenly items-center w-[100%] fixed top-0 left-0 lap:h-28 bg-white ">
+    <div className="h-20  z-10 flex justify-between lap:justify-evenly items-center w-[100%] fixed top-0 left-0 lap:h-28 bg-white shadow-lg">
 
         <div className="h-[100%] flex justify-start items-center lap:w-[40%]  w-[75%] lap:ml-3">
             <img src={iconImage} alt="icon" className=" lap:w-96  tab:w-72 w-full object-cover"/>       

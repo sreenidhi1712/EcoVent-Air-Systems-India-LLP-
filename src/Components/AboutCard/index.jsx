@@ -53,9 +53,9 @@ function AboutCard() {
         </div>
       </div>
 
-      <div ref={missionRef} className="w-[100%] tab:w-[50%] h-[50%] tab:h-full flex flex-col items-center justify-center gap-5 mt-10">
+      <div ref={missionRef} className="  w-[100%] tab:w-[50%] h-[50%] tab:h-full flex flex-col items-center justify-center gap-5 mt-10">
         <div  className="hover:shadow-green-500 shadow-lg py-1 w-[95%] lap:w-[80%] h-[45%] tab:h-[30%] flex flex-col items-center justify-center group hover:border-green-400 hover:border-2 hover:bg-white bg-green-400 rounded-3xl lap:rounded-full hover:scale-105 transition-all duration-500">
-          <PiTargetBold className="text-5xl text-black" />
+          <PiTargetBold className="text-5xl text-white group-hover:text-green-400" />
           <div className="flex flex-col items-center justify-center gap-1 tab:gap-5 w-full px-5">
             <p className="text-xl tab:text-3xl font-extrabold text-white group-hover:text-green-400">OUR MISSION</p>
             <p className="text-sm tab:text-lg font-bold text-white text-center group-hover:text-green-400">
@@ -65,7 +65,7 @@ function AboutCard() {
           </div>
         </div>
         <div  className="hover:shadow-green-500 shadow-lg py-2 w-[95%] lap:w-[80%] h-[45%] tab:h-[30%] flex flex-col items-center justify-center group hover:border-green-400 hover:border-2 hover:bg-white bg-green-400 rounded-3xl lap:rounded-full hover:scale-105 transition-all duration-500">
-          <IoEye className="text-5xl text-black" />
+          <IoEye className="text-5xl text-white group-hover:text-green-400" />
           <div className="flex flex-col items-center justify-center gap-1 tab:gap-5 w-full px-5">
             <p className="text-xl tab:text-3xl font-extrabold text-white  group-hover:text-green-400">OUR VISION</p>
             <p className="text-sm tab:text-lg font-bold text-white text-center group-hover:text-green-400">
