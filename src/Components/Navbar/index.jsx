@@ -41,10 +41,10 @@ function Navbar() {
             <IoMdClose className="size-8" onClick={()=>setShowMenu(false)}/>
          </div>
         <div className="flex-col h-auto"> 
-               <div className="flex justify-start items-center cursor-pointer  w-full h-12 mt-3  group hover:bg-green-600" onClick={()=>navigate("/")}><p className="group-hover:text-white   ml-5 text-black ">Home</p></div>
-               <div className="flex justify-start items-center cursor-pointer  w-full h-12 group hover:bg-green-600" onClick={()=>navigate("/product/spiralDuct")}><p className="group-hover:text-white ml-5 text-black">Products</p></div>
-               <div className="flex justify-start items-center cursor-pointer w-full h-12 group hover:bg-green-600" onClick={()=>navigate("/")}><p className="group-hover:text-white ml-5 text-black">About</p></div>
-               <div className="flex justify-start items-center cursor-pointer w-full h-12  group hover:bg-green-600" onClick={()=>navigate("/")}><p className="group-hover:text-white ml-5 text-black">Contact</p></div>
+               <div className="flex justify-start items-center cursor-pointer  w-full h-12 mt-3  group hover:bg-[#22876A]" onClick={()=>navigate("/")}><p className="group-hover:text-white   ml-5 text-black ">Home</p></div>
+               <div className="flex justify-start items-center cursor-pointer  w-full h-12 group hover:bg-[#22876A]" onClick={()=>navigate("/product/spiralDuct")}><p className="group-hover:text-white ml-5 text-black">Products</p></div>
+               <div className="flex justify-start items-center cursor-pointer w-full h-12 group hover:bg-[#22876A]" onClick={()=>navigate("/")}><p className="group-hover:text-white ml-5 text-black">About</p></div>
+               <div className="flex justify-start items-center cursor-pointer w-full h-12  group hover:bg-[#22876A]" onClick={()=>navigate("/")}><p className="group-hover:text-white ml-5 text-black">Contact</p></div>
         </div>
       </div>
       

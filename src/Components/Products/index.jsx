@@ -9,8 +9,8 @@ function Product({image,data}) {
       <div className="w-[90%] h-[70%] flex justify-center items-center">
       <img src={image} className="h-full w-full object-contain "/>
       </div>
-      <p className="text-2xl font-bold text-center">{data}</p>
-      <button className="mt-2 h-12 bg-green-400 px-4 py-2 rounded-xl font-extrabold text-white" onClick={()=>navigate(`/product/${data}`)}>View more</button>
+      <p className="text-2xl font-bold text-center font-serif">{data}</p>
+      <button className="mt-2 h-12 bg-[#22876A] px-4 py-2 rounded-lg font-extrabold text-white" onClick={()=>navigate(`/product/${data}`)}>View more</button>
     </div>
   )
 }

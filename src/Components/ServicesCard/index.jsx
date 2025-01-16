@@ -43,7 +43,7 @@ export default function ServiceCard() {
   return (
     <div className="mt-20 w-full h-auto py-5 overflow-hidden flex flex-col items-center gap-5">
       <p className="text-4xl font-bold">
-        OUR <span className="text-green-400">SERVICES</span>
+        OUR <span className="text-[#22876A]">SERVICES</span>
       </p>
       <Slider {...settings} className="w-full mt-10">
         {[
@@ -55,7 +55,7 @@ export default function ServiceCard() {
           "Industrial Installations",
         ].map((service, index) => (
           <div key={index} className="h-[370px] flex justify-center items-end">
-            <div className="w-[90%] h-full mx-auto flex justify-center items-center border-2 border-green-400 rounded-3xl shadow-lg">
+            <div className="w-[90%] h-full mx-auto flex justify-center items-center border-2 border-[#22876A] rounded-3xl shadow-lg">
               <p className="text-center font-medium">{service}</p>
             </div>
           </div>

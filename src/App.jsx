@@ -23,7 +23,7 @@ function App() {
       <Footer/>
       <div className="fixed bottom-10 right-5 p-3 tab:p-4 tab:right-10 bg-white rounded-full hover:shadow-gray-500 shadow-md hover:scale-125 transition-all duration-500">
         <a href="https://wa.me/919845059731" target="_blank" rel="noreferrer">
-        <IoLogoWhatsapp className="text-3xl text-green-400 " />
+        <IoLogoWhatsapp className="text-3xl text-[#22876A] " />
         </a>
     
       </div>
