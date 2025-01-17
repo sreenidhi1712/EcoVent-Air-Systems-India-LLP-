@@ -1,4 +1,3 @@
-import Contactus from "./Components/ContactUs"
 import Footer from "./Components/Footer"
 import MainContent from "./Pages/MainPage"
 import Navbar from "./Components/Navbar"
@@ -7,6 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import ProductPage from "./Pages/ProductPage/Index";
+import ContactUs from "./Pages/ContactUsPage";
+import AboutPage from "./Pages/AboutUsPage";
 function App() {
   return (
     <Router>
@@ -17,11 +18,12 @@ function App() {
         <Routes>
           <Route path="/" element={<MainContent/>}/>
           <Route path="/product/:product" element={<ProductPage/>}/>
+          <Route path="/contactUs" element={<ContactUs/>}/>
+          <Route path="/aboutUs" element={<AboutPage/>}/>
         </Routes>
-     
-      <Contactus/>
+    
       <Footer/>
-      <div className="fixed bottom-10 right-5 p-3 tab:p-4 tab:right-10 bg-white rounded-full hover:shadow-gray-500 shadow-md hover:scale-125 transition-all duration-500">
+      <div className="fixed bottom-28 right-5 p-3 tab:p-4 tab:right-10 bg-white rounded-full hover:shadow-gray-500 shadow-md hover:scale-125 transition-all duration-500">
         <a href="https://wa.me/919845059731" target="_blank" rel="noreferrer">
         <IoLogoWhatsapp className="text-3xl text-[#22876A] " />
         </a>

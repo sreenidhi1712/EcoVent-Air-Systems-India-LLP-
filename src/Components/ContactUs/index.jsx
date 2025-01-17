@@ -7,7 +7,34 @@ function Contactus() {
   return (
     <div className="w-[100%] bg-[#22876A] h-auto py-10 flex  flex-col items-center gap-10">
 
-      <div className="w-[90%] bg-white rounded-2xl flex flex-col items-center gap-3 py-5 px-3 lap:w-[45%] ml:w-[85%] mm:w-[90%] tab:w-[70%]">
+      <div className="w-[90%] lap:w-[70%] rounded-lg bg-white flex  flex-col lap:flex-row justify-evenly items-center p-5 gap-2">
+         <div className="w-[100%] lap:w-[40%] flex flex-col justify-evenly">
+           <p className="text-4xl font-bold">Contacts</p>
+           <p className="mt-2 font-light text-justify">You can reach out to us through our contact form for any inquiries or connect with us directly using the contact details provided below.</p>
+          <p className="mt-2 font-light text-justify">Feel free to get in touch with us via email or phone</p>
+         </div>
+         <div className="w-[100%] lap:w-[40%]  flex flex-col items-center justify-evenly mt-5 tab:mt-0">
+
+          <p className="font-bold text-xl self-start">GET OUR QUOTATION</p>
+
+          <div className="flex flex-col w-[100%] gap-3 mt-5 lap:flex-row items-center">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="flex-1 py-2 px-4 w-[100%] text-gray-800 rounded-md border-2 border-slate-200 "
+            required
+          />
+          <button
+            type="submit"
+            className="bg-[#22876A] text-white font-bold rounded-lg p-2 w-[50%] lap:w-[35%]"
+          >Submit </button>
+          </div>
+
+         </div>
+
+      </div>
+
+      {/* <div className="w-[90%] bg-white rounded-2xl flex flex-col items-center gap-3 py-5 px-3 lap:w-[45%] ml:w-[85%] mm:w-[90%] tab:w-[70%]">
         <div className="w-[100%] flex flex-col items-start gap-1 ">
           <h1 className="text-2xl font-bold tab:text-3xl lap:text-4xl tab:self-center">Contact Us</h1>
             <p className="text-xs tab:text-base ">
@@ -59,7 +86,7 @@ function Contactus() {
             </button>
         </div>
     
-    </div>
+    </div> */}
 
     <div className="w-[90%] flex flex-col items-start gap-10 lap:flex-row lap:justify-evenly lap:items-start">
 

@@ -23,16 +23,16 @@ function Navbar() {
          <p className="text-xl  font-bold hover:border-b-2  border-black py-2 cursor-pointer " onClick={()=>navigate("/")}>
             Home
          </p>
-         <p className="text-xl  font-bold hover:border-b-2 border-black py-2 cursor-pointer" onClick={()=>navigate("/product/rectangularDuct")}>
+         <p className="text-xl  font-bold hover:border-b-2 border-black py-2 cursor-pointer" onClick={()=>navigate("/product/all")}>
             Products
          </p>
 
-         <p className="text-xl  font-bold hover:border-b-2 border-black py-2 cursor-pointer" onClick={()=>navigate("/")}>
+         <p className="text-xl  font-bold hover:border-b-2 border-black py-2 cursor-pointer" onClick={()=>navigate("/aboutUs")}>
             About
          </p>
 
-         <p className="text-xl  font-bold hover:border-b-2 border-black py-2 cursor-pointer" onClick={()=>navigate("/")}>
-            Contact
+         <p className="text-xl  font-bold hover:border-b-2 border-black py-2 cursor-pointer" onClick={()=>navigate("/contactUs")}>
+            Contact Us
          </p>
         </div>
 

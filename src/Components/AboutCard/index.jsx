@@ -2,10 +2,12 @@ import { useEffect, useRef } from 'react';
 import { PiTargetBold } from "react-icons/pi";
 import { IoEye } from "react-icons/io5";
 import styles from "./index.module.css";
+import { useNavigate } from 'react-router-dom';
 
 function AboutCard() {
   const aboutTextRef = useRef(null);
   const missionRef = useRef(null);
+  const navigate = useNavigate();
 
 
   useEffect(() => {
@@ -50,6 +52,7 @@ function AboutCard() {
             HVAC Systems. Our scope covers Engineering Design, Manufacturing, Submittals
             Approval, Installation, and Testing & Commissioning HVAC Products.
           </p>
+          <button onClick={()=>navigate("/aboutUs")} className='bg-[#22876A] font-bold text-white p-3 w-[40%] rounded-lg self-center'>View More</button>
         </div>
       </div>
 
