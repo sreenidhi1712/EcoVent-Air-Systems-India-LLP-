@@ -94,12 +94,12 @@ const ContactUs = () => {
               <input
                 type="text"
                 placeholder="First Name"
-                className="w-full bg-white border-2 border-[#22876A] rounded-lg p-3  shadow-sm"
+                className="w-full bg-white border-2 border-slate-200 rounded-lg p-3  shadow-sm"
               />
               <input
                 type="text"
                 placeholder="Last Name"
-                className="w-full bg-white border-2 border-[#22876A] rounded-lg p-3  shadow-sm"
+                className="w-full bg-white border-2 border-slate-200 rounded-lg p-3  shadow-sm"
               />
             </div>
             {/* Email and Subject Fields */}
@@ -107,23 +107,23 @@ const ContactUs = () => {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full bg-white border-2 border-[#22876A] rounded-lg p-3  shadow-sm"
+                className="w-full bg-white border-2 border-slate-200 rounded-lg p-3  shadow-sm"
               />
               <input
                 type="text"
                 placeholder="Subject"
-                className="w-full bg-white border-2 border-[#22876A] rounded-lg p-3  shadow-sm"
+                className="w-full bg-white border-2 border-slate-200 rounded-lg p-3  shadow-sm"
               />
             </div>
             {/* Message Field */}
             <textarea
               placeholder="Your Message"
-              className="w-full bg-white border-2 border-[#22876A] rounded-lg p-3  shadow-sm"
+              className="w-full bg-white border-2 border-slate-200 rounded-lg p-3  shadow-sm"
             ></textarea>
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-white text-[#22876A] border-2 border-[#22876A] rounded-lg py-3 font-bold shadow-lg hover:bg-[#22876A] hover:text-white  transition-transform transform hover:scale-105"
+              className="w-full bg-[#22876A] text-white  border-2 border-[#22876A] rounded-lg py-3 font-bold shadow-lg hover:bg-white hover:text-[#22876A]  transition-transform transform hover:scale-105"
             >
               Send Message
             </button>
