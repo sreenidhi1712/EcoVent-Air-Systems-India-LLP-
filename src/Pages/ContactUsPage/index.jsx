@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { useLocation } from "react-router-dom";
@@ -6,13 +6,61 @@ import { useLocation } from "react-router-dom";
 const ContactUs = () => {
     const { pathname } = useLocation();
 
+    const [showMessage,setShowMessage] = useState(false);
+
+    const [formData, setFormData] = useState({
+      firstName: "",
+      lastName: "",
+      email: "",
+      subject:"",
+      message: "",
+    });
+  
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    // const handleSubmit = (e) => {
+    //   e.preventDefault();
+  
+    //   emailjs
+    //     .send(
+    //       serviceID, // Replace with your EmailJS Service ID
+    //       templateID, // Replace with your EmailJS Template ID
+    //       {
+    //         from_name: `${formData.firstName}  ${formData.lastName}`,
+    //         from_email: formData.email,
+    //         message: formData.message,
+    //       },
+    //       publicKey// Replace with your EmailJS Public Key
+    //     )
+    //     .then(
+    //       (response) => {
+    //         console.log("Message sent successfully!");
+    //         setFormData({
+    //           firstName: "",
+    //           lastName: "",
+    //           email: "",
+    //           message: "",
+    //         });
+    //       },
+    //       (error) => {
+    //         console.log("Failed to send the message. Please try again.");
+    //       }
+    //     );
+    // };
+
+    const handleSubmit = ()=>{
+
+    }
+
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [pathname]);
   return (
-    <div className="relative bg-white py-20 px-5 mt-20">
+    <div className="relative bg-white py-20 px-5 mt-10">
       {/* Background Decorative Shapes */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 ">
         <div className="bg-gradient-to-tr from-green-100 to-green-200 rounded-full w-96 h-96 blur-3xl opacity-40 top-10 left-10 absolute"></div>
         <div className="bg-gradient-to-tr from-green-200 to-green-300 rounded-full w-72 h-72 blur-3xl opacity-30 bottom-20 right-10 absolute"></div>
       </div>
@@ -94,11 +142,17 @@ const ContactUs = () => {
               <input
                 type="text"
                 placeholder="First Name"
+                name='firstName'
+                value={formData.firstName} 
+                onChange={handleChange}
                 className="w-full bg-white border-2 border-slate-200 rounded-lg p-3  shadow-sm"
               />
               <input
                 type="text"
                 placeholder="Last Name"
+                name='lastName'
+                value={formData.lastName}
+                onChange={handleChange}
                 className="w-full bg-white border-2 border-slate-200 rounded-lg p-3  shadow-sm"
               />
             </div>
@@ -106,18 +160,27 @@ const ContactUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input
                 type="email"
+                name='email'
                 placeholder="Email Address"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full bg-white border-2 border-slate-200 rounded-lg p-3  shadow-sm"
               />
               <input
                 type="text"
                 placeholder="Subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
                 className="w-full bg-white border-2 border-slate-200 rounded-lg p-3  shadow-sm"
               />
             </div>
             {/* Message Field */}
             <textarea
               placeholder="Your Message"
+              name='message'
+              value={formData.message}
+              onChange={handleChange}
               className="w-full bg-white border-2 border-slate-200 rounded-lg p-3  shadow-sm"
             ></textarea>
             {/* Submit Button */}
@@ -128,6 +191,10 @@ const ContactUs = () => {
               Send Message
             </button>
           </form>
+        </div>
+
+        <div className={`bg-green-100 border-[#22876A] border-2 p-2 w-[90%] lap:w-[60%] flex justify-center mx-auto rounded-lg ${showMessage ? "" : "hidden" }`}>
+               <p className="font-bold text-[#22876A]">Thank you, The Message has sent Successfully</p>
         </div>
       </div>
     </div>
