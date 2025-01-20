@@ -17,9 +17,9 @@ function App() {
     
         <Routes>
           <Route path="/" element={<MainContent/>}/>
-          <Route path="/product/:product" element={<ProductPage/>}/>
-          <Route path="/contactUs" element={<ContactUs/>}/>
-          <Route path="/aboutUs" element={<AboutPage/>}/>
+          <Route path="/products/:product" element={<ProductPage/>}/>
+          <Route path="/contact-us" element={<ContactUs/>}/>
+          <Route path="/about-us" element={<AboutPage/>}/>
         </Routes>
     
       <Footer/>

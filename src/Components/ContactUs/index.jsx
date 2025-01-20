@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 function Contactus() {
   return (
-    <div className="w-[100%] bg-[#22876A] h-auto py-10 flex  flex-col items-center gap-10">
+    <div className="w-[100%] bg-[#22876A] h-auto py-10 flex  flex-col items-center gap-10 ">
 
       <div className="w-[90%] lap:w-[70%] rounded-lg bg-white flex  flex-col lap:flex-row justify-evenly items-center p-5 gap-2">
          <div className="w-[100%] lap:w-[40%] flex flex-col justify-evenly">

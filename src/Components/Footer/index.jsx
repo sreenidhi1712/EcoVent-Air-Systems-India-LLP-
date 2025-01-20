@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <div className="w-[100%] bg-[#333333] py-10 flex flex-col items-center gap-5">
+    <div className="w-[100%] bg-[#333333] py-10 flex flex-col items-center gap-5 ">
 
       <div className="w-[90%] flex flex-col items-center gap-2 ">
         <p className="text-white font-extrabold tab:text-xl lap:text-3xl">ECOVENT AIR SYSTEMS INDIA LLP</p>
@@ -18,7 +18,7 @@ function Footer() {
       </div>
 
       <div className="w-[100%] flex items-center p-2 justify-evenly tab:w-[60%] lap:w-[40%] mt-10"> 
-        <div  className="flex items-center  justify-center p-2 tab:p-3 bg-[#3c5999] rounded-full hover:scale-110 transition-all duration-500 hover:cursor-pointer">
+        <div  className="flex items-center ```` justify-center p-2 tab:p-3 bg-[#3c5999] rounded-full hover:scale-110 transition-all duration-500 hover:cursor-pointer">
         <FaFacebookF className="text-white text-3xl "/>
         </div>
              <div className="flex items-center justify-center p-2 tab:p-3 rounded-full bg-[#c435a3]  hover:scale-110 transition-all duration-500 hover:cursor-pointer">

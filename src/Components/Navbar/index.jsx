@@ -20,18 +20,19 @@ function Navbar() {
 
         <div className="h-[100%]  justify-evenly items-center w-[40%]  lap:flex hidden">
 
-         <p className="text-xl  font-bold hover:border-b-2  border-black py-2 cursor-pointer " onClick={()=>navigate("/")}>
+         <p className="text-xl  font-bold hover:border-b-2 hover:text-[#22876A] hover:border-[#22876A]  border-black py-2 cursor-pointer " onClick={()=>navigate("/")}>
             Home
          </p>
-         <p className="text-xl  font-bold hover:border-b-2 border-black py-2 cursor-pointer" onClick={()=>navigate("/product/all")}>
-            Products
-         </p>
 
-         <p className="text-xl  font-bold hover:border-b-2 border-black py-2 cursor-pointer" onClick={()=>navigate("/aboutUs")}>
+         <p className="text-xl  font-bold hover:border-b-2 hover:text-[#22876A] hover:border-[#22876A] border-black py-2 cursor-pointer" onClick={()=>navigate("/about-us")}>
             About
          </p>
 
-         <p className="text-xl  font-bold hover:border-b-2 border-black py-2 cursor-pointer" onClick={()=>navigate("/contactUs")}>
+         <p className="text-xl  font-bold hover:border-b-2 hover:text-[#22876A] hover:border-[#22876A] border-black py-2 cursor-pointer" onClick={()=>navigate("/products/all")}>
+            Products
+         </p>
+
+         <p className="text-xl  font-bold hover:border-b-2 hover:text-[#22876A] hover:border-[#22876A] border-black py-2 cursor-pointer" onClick={()=>navigate("/contact-us")}>
             Contact Us
          </p>
         </div>

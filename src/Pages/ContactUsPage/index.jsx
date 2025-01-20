@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const ContactUs = () => {
     const { pathname } = useLocation();
@@ -59,6 +60,20 @@ const ContactUs = () => {
     }, [pathname]);
   return (
     <div className="relative bg-white py-20 px-5 mt-10">
+
+<Helmet>
+        <title>Contact Us | ECOVENT - HVAC Solutions</title>
+        <meta
+          name="description"
+          content="Get in touch with ECOVENT for high-quality HVAC solutions, Ducts, and Dampers. Reach us for consultation or product inquiries."
+        />
+        <meta name="keywords" content="ECOVENT Air Systems India LLP,ECOVENT ,HVAC Installation,HVAC manufacturing, contact us, HVAC, air systems, customer support, consultation" />
+        <meta property="og:title" content="Contact Us | ECOVENT - HVAC Solutions" />
+        <meta property="og:description" content="Reach out to ECOVENT for all your HVAC solution needs. Our team is ready to assist you with consultation and product inquiries." />
+        <meta property="og:url" content="https://www.yoursite.com/contact-us" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       {/* Background Decorative Shapes */}
       <div className="absolute inset-0 -z-10 ">
         <div className="bg-gradient-to-tr from-green-100 to-green-200 rounded-full w-96 h-96 blur-3xl opacity-40 top-10 left-10 absolute"></div>
@@ -202,3 +217,5 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+
+
